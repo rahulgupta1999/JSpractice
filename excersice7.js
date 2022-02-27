@@ -28,4 +28,9 @@ y=String(100 + 23)  // returns a string from a number from an expression
 z=x.toString()
 z=(123).toString()
 z=(100 + 23).toString()
-
+function randomInt() {
+    return (((new Date()).getMilliseconds())/5).toFixed(0)
+}
+function randomFloat(precision) {
+    return (((new Date()).getMilliseconds())/8).toFixed(precision)
+}
